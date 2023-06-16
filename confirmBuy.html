@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Plug Sneakers & Accesories es la marca líder del mercado del HYPE, productos importados 100% originales, te invitamos a formar parte de esta gran familia! #WeAreCreating." />
+  <meta name="keywords"
+    content="Los mejores Sneakers 2022, Comprar Sneakers originales, Tienda de Sneakers, Venta de Sneakers, balenciaga sneakers, adidas forum" />
+  <meta property="og:type" content="Tienda de Sneakers" />
+  <meta property="og:title" content="PLUG | Tienda de Sneakers y Accesorios HYPE con Envios a Todo el País" />
+  <meta property="og:url" content="http://plugsneakers.000webhostapp.com/" />
+  <meta property="og:image" content="url:https://ibb.co/Wpkzvvq" />
+  <link rel="icon" href="../img/logoico.png" />
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Confirma tu compra</title>
+</head>
+
+<body>
+  <div class="container-phone-menu"></div>
+  <header class="header">
+      <div class="header__container-white">
+          <div class="bars__menu">
+              <span class="line1__bars-menu"></span>
+              <span class="line2__bars-menu"></span>
+              <span class="line3__bars-menu"></span>
+          </div>
+          <div class="menu-dark"></div>
+          <h1 class="navbar__h1">Versace</h1>
+          <div class="menu menu-flex">
+              <nav class="navbar">
+                  <ul class="navbar__ul">
+                      <li class="navbar__li">
+                        <a href="index.html" class="navbar__links">Home</a>
+                        <a href="sneakers.html" id="showAllButton" class="navbar__links">Sneakers</a>
+                        <a href="html/clocks.html" class="navbar__links">Presale</a>
+                        <a href="html/accessories.html" class="navbar__links">Accessories</a>
+                        <a href="html/about-us.html" class="navbar__links">About us</a>
+                        <a href="html/about-us.html" class="navbar__links" style="color: var(--clr-gold)">Gifts</a>
+                      </li>
+                      <li class="navbar__help">
+                        <a href="#" class="navbar__links">Contact</a>
+                        <a href="#" class="navbar__links">Help</a>
+                        <a href="#" class="navbar__links">My Account</a>
+                      </li>
+                    </ul>
+              </nav>
+          </div>
+          <div class="right-navigation">
+              <div class="contador">
+                  <img src="img/carrito.png" class="carrito" id="btn" alt="carrito" />
+                  <div class="contador-productos">
+                      <span id="contador-productos" class="contador-numero">0</span>
+                  </div>
+                  
+                  <div id="carrito" class="cart__table">
+                      <table id="cart-items" class="u-full-width">
+                          <img src="img/close-cart.png" class="close-cart">
+                          <tbody>
+                              <h2 class="cart-title"> </h2>
+                          </tbody>
+                      </table>
+                      <button class="buttonCheckout">
+                          <a href="sneakers.html" id="checkout" class="cart-empty">Your cart is empty!</a>
+                      </button>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <div class="wrapper">
+
+    <div class="card">
+      <div class="card-front">
+        <img src="img/bg-card-front.png" alt="Frente de la tarjeta">
+        <div class="card-front__data">
+          <img src="img/card-logo.svg" alt="">
+          <div>
+            <p class="card-number" id="card-number">0000 0000 0000 0000</p>
+            <div class="card-name-date">
+              <p class="card-name" id="card-name">Jane Appleseed</p>
+              <p class="card-date">
+                <span id="card-month">00</span>/<span id="card-year">00</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-back">
+        <img src="img/bg-card-back.png" alt="Dorso de la tarjeta">
+        <div class="card-back__data">
+          <p class="card-cvc" id="card-cvc">000</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-wrapper">
+      <form class="form" id="form">
+        <div class="form-group">
+          <label for="input-name" class="label">Cardholder Name</label>
+          <input type="text" class="input" id="input-name" placeholder="e.g. Jane Appleseed" required>
+        </div>
+        <div class="form-group">
+          <label for="input-name" class="label">Email</label>
+          <input type="email" class="input" id="input-name" placeholder="e.g email@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="input-number" class="label">Card Number</label>
+          <input type="text" class="input" id="input-number" placeholder="e.g. 1234 5678 9123 0000" required>
+        </div>
+        <div class="form-group double">
+          <div class="rows">
+            <label for="input-month" class="label">Exp. Date (MM/YY)</label>
+            <div class="columns">
+              <input type="text" class="input" id="input-month" placeholder="MM" maxlength="2" required>
+              <input type="text" class="input" id="input-year" placeholder="YY" maxlength="2" required>
+            </div>
+          </div>
+          <div class="rows">
+            <label for="input-cvc" class="label">CVC</label>
+            <input type="text" class="input" id="input-cvc" placeholder="e.g. 123" maxlength="3" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <button class="button opacity-50" id="confirm" type="submit">Confirm</button>
+        </div>
+      </form>
+      
+      <div class="thank-you disabled" id="thank-you">
+        <img src="img/icon-complete.svg" alt="Ícono de completado">
+        <p class="thank-you-title">Thank you!</p>
+        <p class="thank-you-text">We will send you the details of the purchase to the email you indicated</p>
+        <button><a href="sneakers.html" class="button-continue" id="continue">Continue Buying</a></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.0.2/cleave.min.js" integrity="sha512-SvgzybymTn9KvnNGu0HxXiGoNeOi0TTK7viiG0EGn2Qbeu/NFi3JdWrJs2JHiGA1Lph+dxiDv5F9gDlcgBzjfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/showCart.js"></script>
+  <script src="js/showMenu.js"></script>
+  <script src="js/payment.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

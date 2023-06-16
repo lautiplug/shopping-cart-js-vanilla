@@ -1,0 +1,58 @@
+[
+  {
+    "id": 15,
+    "name": "Chaqueta bomber de nailon Varsity",
+    "price": 1899.99,
+    "instock": 13,
+    "imgSrc": "img/Jackets/jacket-1.webp"
+  },
+  {
+    "id": 16,
+    "name": "Chaqueta bomber de piel Greca",
+    "price": 2549.99,
+    "instock": 13,
+    "imgSrc": "img/Jackets/jacket-2.webp"
+  },
+  {
+    "id": 17,
+    "name": "Chaqueta cortavientos Barocco 660",
+    "price": 3249.99,
+    "instock": 13,
+    "imgSrc": "img/Jackets/jacket-3.webp"
+  },
+  {
+    "id": 18,
+    "name": "Chaqueta bomber reversible Barocco 660",
+    "price": 1449.99,
+    "instock": 13,
+    "imgSrc": "img/Jackets/jacket-4.webp"
+  },
+  {
+    "id": 19,
+    "name": "Chaqueta bomber acolchada Barocco 660",
+    "price": 1549.99,
+    "instock": 13,
+    "imgSrc": "img/Jackets/jacket-5.webp"
+  },
+  {
+    "id": 20,
+    "name": "Cazadora bomber de nailon con logotipo",
+    "price": 2989.99,
+    "instock": 13,
+    "imgSrc": "img/Jackets/jacket-6.webp"
+  },
+  {
+    "id": 21,
+    "name": "Chaqueta bomber del Festival de Primavera",
+    "price": 2229.99,
+    "instock": 13,
+    "imgSrc": "img/Jackets/jacket-7.webp"
+  },
+  {
+    "id": 22,
+    "name": "Chaqueta bomber reversible La Greca",
+    "price": 1989.99,
+    "instock": 13,
+    "imgSrc": "img/Jackets/jacket-8.webp"
+  }
+]

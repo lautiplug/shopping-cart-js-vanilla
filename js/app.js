@@ -151,13 +151,6 @@ function changeNumberOfUnits(action, id) {
   updateCart();
 }
 
-const emptyCartButton = document.querySelector("#continue");
-emptyCartButton.addEventListener("click", emptyCart);
-
-function emptyCart() {
-  cart = []; // Vaciar el carrito asignándole un array vacío
-  updateCart(); // Actualizar el carrito en la interfaz
-}
 
 ///////////////////////////////////////////////// METODO PARA BUSCAR MEDIANTE UN INPUT //////////////////////////////////////////////////
 
@@ -183,14 +176,14 @@ function showAllProducts() {
 
 function filterProducts() {
   const savedSearchValue = localStorage.getItem("searchValue");
+  const filterValue = savedSearchValue ? savedSearchValue.trim() : "";
 
-  if (savedSearchValue) {
+  if (filterValue !== "") {
     const filteredProducts = products.filter((product) => {
       const productName = product.name.toLowerCase();
-      return productName.includes(savedSearchValue);
+      return productName.includes(filterValue);
     });
 
-    productsEl.innerHTML = "";
     renderProducts(filteredProducts);
   } else {
     renderProducts(products);
